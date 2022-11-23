@@ -38,46 +38,6 @@ class CreateSubscription(APIView):
 
 class webhook(APIView):
     def post(self, request):
-        # payload = json.loads(request.body)
-        # sig_header = request.META['HTTP_STRIPE_SIGNATURE']
-        # event = None
-
-        # print(sig_header,payload)
-        # try:
-        #     event = stripe.Webhook.construct_event(
-        #     payload, sig_header, webhook_secret
-        #     )
-        # except ValueError as e:
-        #     # Invalid payload
-        #     print(e)
-        #     return Response(status=400)
-        # except stripe.error.SignatureVerificationError as e:
-        #     print('1',e)
-        #     # Invalid signature
-        #     return Response(status=400)
-
-        # # Handle the event
-        # if event.type == 'payment_intent.succeeded':
-        #     payment_intent = event.data.object # contains a stripe.PaymentIntent
-        #     print('PaymentIntent was successful!')
-        # elif event.type == 'payment_method.attached':
-        #     payment_method = event.data.object # contains a stripe.PaymentMethod
-        #     print('PaymentMethod was attached to a Customer!')
-        # # ... handle other event types
-        # else:
-        #     print('Unhandled event type {}'.format(event.type))
-
-        # return Response(status=200)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
         """
             This API handling the webhook .
             :return: returns event details as json response .
